@@ -15,6 +15,8 @@ class BeforeVoucherMiddleware
      */
     public function handle($request, Closure $next)
     {
-        return $next($request);
+        // call service to check if valid request token
+        
+         return $next($request);
     }
 }

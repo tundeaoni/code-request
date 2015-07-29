@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Voucher;
 
 /**
  * Description of VoucherController
@@ -14,7 +14,7 @@ namespace App\Http\Controllers;
 class VoucherController extends Controller {
     
     public function getVoucher(){
-        
+        echo 'Lights , Camera ,Action';
     }
     
 }
