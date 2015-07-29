@@ -12,5 +12,5 @@
 */
 
 $app->get('/', function () use ($app) {
-    return View::make('hello');
+    return $app->welcome();
 });
