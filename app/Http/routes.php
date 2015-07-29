@@ -11,6 +11,7 @@
 |
 */
 
-$app->get('/', function () use ($app) {
-    return View::make('hello');
-});
+$app->get('voucher', [
+    'middleware' => 'before_voucher',
+    'uses' => 'VoucherController@getVoucher'
+]);

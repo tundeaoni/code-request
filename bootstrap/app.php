@@ -62,9 +62,9 @@ $app->singleton(
 //     // Laravel\Lumen\Http\Middleware\VerifyCsrfToken::class,
 // ]);
 
-// $app->routeMiddleware([
-
-// ]);
+ $app->routeMiddleware([
+     "before_voucher" => "App\Http\Middleware\BeforeVoucherMiddleware"
+ ]);
 
 /*
 |--------------------------------------------------------------------------
