@@ -12,5 +12,12 @@
 */
 
 $app->get('/', function () use ($app) {
+    dd('code-request');
     return $app->welcome();
 });
+
+// $app->get('/foo', function () use ($app) {
+//     dd('food');
+// });
+
+$app->get('handleRequest', 'Request\IndexController@handleRequest');
