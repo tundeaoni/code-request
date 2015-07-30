@@ -11,6 +11,12 @@
 |
 */
 
+//['uses' => 'App\Http\Controllers\ContactController@newMessage']
+
+
 $app->get('/', function () use ($app) {
-    return View::make('hello');
+    return response()->json(['ok'], 200);
+
 });
+
+$app->get('dispatchRequest', 'DispatchController@parseURL');

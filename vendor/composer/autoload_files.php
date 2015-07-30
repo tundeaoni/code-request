@@ -9,6 +9,10 @@ return array(
     $vendorDir . '/danielstjules/stringy/src/Create.php',
     $vendorDir . '/illuminate/support/helpers.php',
     $vendorDir . '/symfony/var-dumper/Resources/functions/dump.php',
+    $vendorDir . '/swiftmailer/swiftmailer/lib/swift_required.php',
     $vendorDir . '/nikic/fast-route/src/functions.php',
+    $vendorDir . '/guzzlehttp/promises/src/functions.php',
+    $vendorDir . '/guzzlehttp/psr7/src/functions.php',
     $vendorDir . '/laravel/lumen-framework/src/helpers.php',
+    $vendorDir . '/guzzlehttp/guzzle/src/functions_include.php',
 );
