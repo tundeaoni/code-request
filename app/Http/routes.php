@@ -15,3 +15,10 @@ $app->get('voucher', [
     'middleware' => 'before_voucher',
     'uses' => 'VoucherController@getVoucher'
 ]);
+
+$app->get('/', function () use ($app) {
+    dd('code-request');
+    return $app->welcome();
+});
+
+$app->get('handleRequest', 'Request\IndexController@handleRequest');
