@@ -27,15 +27,16 @@ class DispatchController extends Controller {
 
     public function parseURL(Request $req)
     {
-            $email = $req->get('email');
-            $hash = $req->get('hashcode');
-     //       $email = "moses.olalere@irokopartners.com";
-       //     $hash = "hashme";
+        //    $email = $req->get('email');
+        //    $hash = $req->get('hashcode');
+            $email = "moses.olalere@irokopartners.com";
+            $hash = "hashme";
 
             $emailhand = new EmailHandler($email, $hash);
 
             $emailhand->SendOutHandler();
 
+        return response()->json(['ok'], 200);
 
     }
 }

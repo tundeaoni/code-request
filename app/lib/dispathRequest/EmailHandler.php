@@ -9,6 +9,7 @@
 namespace App\lib\dispathRequest;
 
 use Illuminate\Support\Facades\Mail;
+//use Illuminate\mail;
 
 
 class EmailHandler implements dispatch {
@@ -32,11 +33,14 @@ class EmailHandler implements dispatch {
     public function emailsent()
     {
         $body = "Here is your voucher code " . $this->voucher;
-        Mail::raw($body, function($message) {
+        //echo $this->email; die();
+
+        Mail::raw($body, function($message)
+        {
             $message->to($this->email, 'Client Name');
         });
 
-        return response()->json(['ok'], 200);
+       // return response()->json(['ok'], 200);
     }
 
     function SendOutHandler()
